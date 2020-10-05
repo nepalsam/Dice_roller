@@ -1,4 +1,4 @@
-    let roll = document.querySelector("#roll");
+     let roll = document.querySelector("#roll");
     let totalResult = document.querySelector("#result");
     let showRolls = document.querySelector("#showRoll");
     let lists = document.querySelector("#lists");
@@ -10,14 +10,14 @@
       while (num < userInput) {
         let x = Math.floor(Math.random() * 6) + 1;
         diceRolls.push(x);
-        total += diseRolls[num];
+        total += diceRolls[num];
         num += 1 ;
       }
       totalResult.innerHTML = total;
       console.log(diceRolls);
       showRolls.addEventListener("click", function () {
         str = "<ol>";
-        diseRolls.forEach(function (dise) {
+        diceRolls.forEach(function (dice) {
           str += "<li>" + dise + "</li>";
         });
         str += "</ol>";
@@ -31,7 +31,9 @@
           str += "<li>" + diceRolls[num1] + "</li>";
           num1 += 1;
         }
-       
+        // diceRolls.forEach(function (dice) {
+        //   str += "<li>" + dice + "</li>";
+        // });
         str += "</ol>";
         lists.innerHTML = str;
       });
