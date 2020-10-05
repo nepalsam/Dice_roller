@@ -18,7 +18,7 @@
       showRolls.addEventListener("click", function () {
         str = "<ol>";
         diceRolls.forEach(function (dice) {
-          str += "<li>" + dise + "</li>";
+          str += "<li>" + dice + "</li>";
         });
         str += "</ol>";
         lists.innerHTML = str;
