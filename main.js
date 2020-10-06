@@ -31,9 +31,7 @@
           str += "<li>" + diceRolls[num1] + "</li>";
           num1 += 1;
         }
-        // diceRolls.forEach(function (dice) {
-        //   str += "<li>" + dice + "</li>";
-        // });
+       
         str += "</ol>";
         lists.innerHTML = str;
       });
